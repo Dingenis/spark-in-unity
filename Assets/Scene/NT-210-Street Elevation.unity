@@ -3020,8 +3020,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1821092789}
-  m_LocalRotation: {x: -0.03138782, y: -0.8506383, z: -0.051452875, w: 0.5222854}
-  m_LocalPosition: {x: 28.855347, y: -47.603035, z: 7.4622803}
+  m_LocalRotation: {x: 0.23702887, y: 0.6996063, z: 0.26813796, w: -0.618442}
+  m_LocalPosition: {x: 194.763, y: -339.77438, z: 61.534416}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3247,7 +3247,7 @@ GameObject:
   - component: {fileID: 1958885614}
   - component: {fileID: 1958885613}
   m_Layer: 0
-  m_Name: Cube (7)
+  m_Name: Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3321,8 +3321,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958885612}
   m_LocalRotation: {x: -0, y: 0.2164396, z: -0, w: 0.97629607}
-  m_LocalPosition: {x: -14.047066, y: 63.038513, z: 270.53622}
-  m_LocalScale: {x: 6, y: 10, z: 20}
+  m_LocalPosition: {x: -14, y: 59, z: 270.53622}
+  m_LocalScale: {x: 7, y: 12, z: 20}
   m_Children: []
   m_Father: {fileID: 1693196675}
   m_RootOrder: 7
@@ -16843,7 +16843,7 @@ PrefabInstance:
     - target: {fileID: 4420883232631749924, guid: 198fe06721e74204b86f32b69c0c2022,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.5
+      value: -20.5
       objectReference: {fileID: 0}
     - target: {fileID: 4420883232631749924, guid: 198fe06721e74204b86f32b69c0c2022,
         type: 3}
