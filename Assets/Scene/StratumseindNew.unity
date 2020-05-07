@@ -1993,8 +1993,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044492685}
-  m_LocalRotation: {x: 0.0032155097, y: -0.27773872, z: -0.0007902669, w: -0.960651}
-  m_LocalPosition: {x: -102.02973, y: -70.86394, z: -1.9380951}
+  m_LocalRotation: {x: 0.23077643, y: 0.520201, z: 0.14817451, w: -0.8088124}
+  m_LocalPosition: {x: 33.205566, y: -129.17432, z: 86.03821}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3715,8 +3715,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1672438986}
-  m_LocalRotation: {x: 0.09597378, y: -0.50145817, z: -0.055924434, w: -0.8580217}
-  m_LocalPosition: {x: -61.9065, y: -33.306675, z: 44.342995}
+  m_LocalRotation: {x: 0.23077643, y: 0.520201, z: 0.14817451, w: -0.8088124}
+  m_LocalPosition: {x: 33.205566, y: -100.30031, z: 86.03821}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4233,7 +4233,7 @@ GameObject:
   - component: {fileID: 1991334767}
   - component: {fileID: 1991334766}
   m_Layer: 0
-  m_Name: Terrain
+  m_Name: NewTerrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
