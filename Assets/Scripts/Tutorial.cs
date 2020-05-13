@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Tutorial : MonoBehaviour
 {
@@ -29,8 +30,10 @@ public class Tutorial : MonoBehaviour
             GameObject gObject = collider.gameObject;
             if(gObject.name == "Fountain") {
                 FountainClose = true;
+                GameObject.Find("Fountain Text").GetComponent<TextMeshProUGUI>().enabled = true;
             } else {
                 FountainClose = false;
+                GameObject.Find("Fountain Text").GetComponent<TextMeshProUGUI>().enabled = false;
             }
         } else {
             FountainClose = false;
