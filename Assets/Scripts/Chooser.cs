@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
  using UnityEngine.Video;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Chooser : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
+        GameObject.Find("LoadingText").GetComponent<Text>().enabled = false;
         GetComponent<VideoPlayer>().loopPointReached += OnVideoEnded;
     }
 
@@ -18,13 +20,48 @@ public class Chooser : MonoBehaviour
         
     }
 
+    enum Scenes {
+        New, Normal
+    }
+
     void OnVideoEnded(VideoPlayer player) {
+
+        player.enabled = false;
+        GameObject.Find("LoadingText").GetComponent<Text>().enabled = true;
+
+
         bool randomValue = (Random.value >= 0.5);
 
+        Scenes sceneToLoad;
         if(randomValue) {
-            SceneManager.LoadScene("StratumseindNew");
+            sceneToLoad = Scenes.New;
         } else {
-            SceneManager.LoadScene("StratumseindNormal");
+            sceneToLoad = Scenes.Normal;
+        }
+
+        // Use a coroutine to load the Scene in the background
+        StartCoroutine(LoadSceneAsync(sceneToLoad));
+    }
+
+    IEnumerator LoadSceneAsync(Scenes scene)
+    {
+        AsyncOperation asyncLoad;
+        switch(scene) {
+            case Scenes.New:
+            asyncLoad = SceneManager.LoadSceneAsync("StratumseindNew");
+            break;
+            case Scenes.Normal:
+            asyncLoad = SceneManager.LoadSceneAsync("StratumseindNormal");
+            break;
+            default:
+            asyncLoad = SceneManager.LoadSceneAsync("StratumseindNormal");
+            break;
+        }
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
         }
     }
 }
