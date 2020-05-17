@@ -48,7 +48,7 @@ public class Chooser : MonoBehaviour
         AsyncOperation asyncLoad;
         switch(scene) {
             case Scenes.New:
-            asyncLoad = SceneManager.LoadSceneAsync("StratumseindNew");
+            asyncLoad = SceneManager.LoadSceneAsync("StratumseindNormal");
             break;
             case Scenes.Normal:
             asyncLoad = SceneManager.LoadSceneAsync("StratumseindNormal");
