@@ -17,7 +17,11 @@ public class Chooser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKey(KeyCode.Escape)) {
+            VideoPlayer vp = GetComponent<VideoPlayer>();
+            vp.Pause();
+            OnVideoEnded(vp);
+        }   
     }
 
     enum Scenes {
@@ -48,13 +52,13 @@ public class Chooser : MonoBehaviour
         AsyncOperation asyncLoad;
         switch(scene) {
             case Scenes.New:
-            asyncLoad = SceneManager.LoadSceneAsync("StratumseindNormal");
+            asyncLoad = SceneManager.LoadSceneAsync("StratumseindNew");
             break;
             case Scenes.Normal:
-            asyncLoad = SceneManager.LoadSceneAsync("StratumseindNormal");
+            asyncLoad = SceneManager.LoadSceneAsync("StratumseindNew");
             break;
             default:
-            asyncLoad = SceneManager.LoadSceneAsync("StratumseindNormal");
+            asyncLoad = SceneManager.LoadSceneAsync("StratumseindNew");
             break;
         }
 
