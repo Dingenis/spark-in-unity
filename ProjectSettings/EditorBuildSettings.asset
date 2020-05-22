@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scene/IntroScene.unity
     guid: b09a80796a7e6b943b29f1d0148ce582
   - enabled: 1
-    path: Assets/Scene/StratumseindNew.unity
+    path: Assets/Scene/SE_New.unity
     guid: cf88e1e11290d2942968e8e47d400f38
   - enabled: 1
-    path: Assets/Scene/StratumseindNormal.unity
+    path: Assets/Scene/SE_Normal.unity
     guid: 7a2a816626f62e24ea59c22e59d6171f
   m_configObjects: {}
